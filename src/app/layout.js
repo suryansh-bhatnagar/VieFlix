@@ -1,3 +1,4 @@
+import Header from '@/app/components/Header';
 import './globals.css'
 import { Mulish } from 'next/font/google';
 
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={mulish.className}>
       <body>
+        <Header />
         {children}
       </body>
     </html>
