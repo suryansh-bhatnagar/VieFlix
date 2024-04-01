@@ -7,7 +7,7 @@ export default function Header() {
     <header className={styles.main_header}>
       <div className={styles.navbar_brand}>
         <Link href={'/'}>
-          <Image src={'/logo.png'} alt='logo' width={150} height={50} />
+          <Image src={'/vieflix-logo.png'} alt='logo' width={150} height={50} />
         </Link>
       </div>
       <Nav />
