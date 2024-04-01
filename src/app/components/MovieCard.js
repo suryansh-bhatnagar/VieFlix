@@ -12,11 +12,12 @@ export default function MovieCard(movie) {
                 </div>
 
                 <div className={styles.card_data}>
-                    <h2>{title}</h2>
+                    <h2>{title.substring(0, 18)}</h2>
                     <p>
-                        {synopsis}
+                        {`${synopsis.substring(0, 66)} ...`}
                     </p>
-                    <Link href={`movie/${id}`}>
+
+                    <Link href={`/movie/${id}`}>
                         <button>
                             Read More
                         </button>

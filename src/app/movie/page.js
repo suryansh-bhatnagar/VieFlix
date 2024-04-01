@@ -24,9 +24,11 @@ const Page = async () => {
         <section className={styles.movieSection}>
             <div className={styles.container}>
                 <h1>Series & Movies</h1>
-                {
-                    main_data.filter((item) => item.jawSummary.backgroundImage.imageKey !== 'unavailable').map((movie) => <MovieCard key={movie.id} {...movie} />)
-                }
+                <div className={styles.card_section}>
+                    {
+                        main_data.filter((item) => item.jawSummary.backgroundImage.imageKey !== 'unavailable').map((movie) => <MovieCard key={movie.id} {...movie} />)
+                    }
+                </div>
 
             </div>
 
